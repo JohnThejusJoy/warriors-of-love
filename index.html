@@ -33,31 +33,32 @@
       gap: 25px;
     }
     .card {
-      background: white;
+      background: black;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
       overflow: hidden;
       width: 250px;
       text-decoration: none;
-      color: black;
+      color: white;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .card:hover {
       transform: scale(1.08);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     }
     .card img {
       width: 100%;
-      height: auto;
+      height: 200px;
       display: block;
-      object-fit: cover;
+      object-fit: cover; /* keeps all images same size/crop style */
     }
     .card h3 {
       padding: 15px;
       margin: 0;
       font-size: 1.3rem;
       font-weight: bold;
-      background-color: #f9f9f9;
+      background-color: black;
+      color: white;
     }
   </style>
 </head>
@@ -74,7 +75,7 @@
 
     <a href="amma.html" class="card">
       <img src="amma.jpg" alt="Our Mother">
-      <h3>Our Mother🤍</h3>
+      <h3>Our Mother🌸</h3>
     </a>
 
     <a href="angels.html" class="card">

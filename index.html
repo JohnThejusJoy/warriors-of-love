@@ -6,53 +6,48 @@
   <title>The Powerhouse⚡</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background: #f4f4f9;
       text-align: center;
     }
     .header {
-      background: linear-gradient(135deg, #2c3e50, #4a69bd);
+      background: #2c3e50;
       color: white;
       padding: 40px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
     .header h1 {
-      font-size: 3rem;
       margin: 0;
-      font-weight: 900;
+      font-size: 3rem;
     }
     .gallery {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 40px auto;
-      max-width: 1200px;
-      gap: 30px;
+      flex-direction: column;   /* stack vertically */
+      align-items: center;
+      gap: 25px;                /* space between cards */
+      margin: 40px 0;
     }
     .card {
+      width: 300px;
       background: white;
-      border-radius: 15px;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      overflow: hidden;
-      width: 260px;
       text-decoration: none;
       color: black;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      transition: transform 0.2s ease;
     }
     .card:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
     .card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
     }
     .card h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
       margin: 15px 0;
     }
   </style>

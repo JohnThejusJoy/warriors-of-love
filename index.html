@@ -21,43 +21,41 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
     .header h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin: 0;
       font-weight: 900;
     }
     .gallery {
       display: flex;
-      flex-direction: column; /* stack vertically */
+      flex-direction: column; /* stacked vertically */
       align-items: center;
       margin: 40px 20px;
-      gap: 25px; /* spacing between cards */
+      gap: 25px;
     }
     .card {
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       overflow: hidden;
-      width: 260px;
+      width: 250px;
       text-decoration: none;
       color: black;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
       box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
-   .card img {
-  width: 100%;
-  height: auto;         /* keep proportions */
-  object-fit: contain;  /* show entire image */
-  background: #fff;     /* fills space if empty bars appear */
-  padding: 10px;        /* optional: gives some breathing room */
-}
-
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
     .card h3 {
       padding: 15px;
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: bold;
       background-color: #f9f9f9;
     }
@@ -69,24 +67,25 @@
   </div>
 
   <div class="gallery">
-    <!-- OG -->
-    <a href="og.html" class="card">
-      <img src="trinity.jpg" alt="The OG">
+    <a href="trinity.html" class="card">
+      <img src="trinity.jpg" alt="The Trinity">
       <h3>The OG🔥</h3>
     </a>
 
-    <!-- Queen -->
-    <a href="queen.html" class="card">
-      <img src="queen.jpg" alt="The Queen">
-      <h3>The Queen👑</h3>
+    <a href="amma.html" class="card">
+      <img src="amma.jpg" alt="Our Mother">
+      <h3>Our Mother🤍</h3>
     </a>
 
-    <!-- Squad -->
+    <a href="angels.html" class="card">
+      <img src="angels.jpg" alt="Heavenly Hosts">
+      <h3>Heavenly Hosts🕊️</h3>
+    </a>
+
     <a href="saints.html" class="card">
-      <img src="squad.jpg" alt="The Squad">
+      <img src="saints.jpg" alt="The Squad">
       <h3>The Squad🛡️</h3>
     </a>
   </div>
 </body>
 </html>
-

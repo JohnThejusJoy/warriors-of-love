@@ -22,20 +22,20 @@
       font-size: 3rem;
     }
     .gallery {
-      display: flex;
-      flex-direction: column;   /* stack vertically */
-      align-items: center;
-      gap: 25px;                /* space between cards */
-      margin: 40px 0;
+      display: block;   /* force vertical flow */
+      margin: 40px auto;
+      max-width: 400px; /* center and limit width */
     }
     .card {
-      width: 300px;
+      display: block;
+      margin: 20px auto;   /* spacing between cards */
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       text-decoration: none;
       color: black;
       transition: transform 0.2s ease;
+      width: 100%;
     }
     .card:hover {
       transform: scale(1.05);

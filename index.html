@@ -1,31 +1,85 @@
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
-  <!-- The OG -->
-  <a href="trinity.html" class="block">
-    <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
-      <img src="images/trinity.jpg" alt="The OG" class="w-full h-48 object-cover">
-      <div class="p-4 text-center">
-        <h2 class="text-xl font-bold">The OG🔥</h2>
-      </div>
-    </div>
-  </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Powerhouse⚡</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      text-align: center;
+    }
+    .header {
+      background: linear-gradient(135deg, #2c3e50, #4a69bd);
+      color: white;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 900;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1200px;
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 260px;
+      text-decoration: none;
+      color: black;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>The Powerhouse⚡</h1>
+  </div>
 
-  <!-- The Queen -->
-  <a href="amma.html" class="block">
-    <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
-      <img src="images/amma.jpg" alt="The Queen" class="w-full h-48 object-cover">
-      <div class="p-4 text-center">
-        <h2 class="text-xl font-bold">The Queen👑</h2>
-      </div>
-    </div>
-  </a>
+  <div class="gallery">
+    <!-- The OG -->
+    <a href="trinity.html" class="card">
+      <img src="images/trinity.jpg" alt="The OG">
+      <h2>The OG🔥</h2>
+    </a>
 
-  <!-- The Squad -->
-  <a href="squad.html" class="block">
-    <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
-      <img src="images/squad.jpg" alt="The Squad" class="w-full h-48 object-cover">
-      <div class="p-4 text-center">
-        <h2 class="text-xl font-bold">The Squad🛡️</h2>
-      </div>
-    </div>
-  </a>
-</div>
+    <!-- The Queen -->
+    <a href="amma.html" class="card">
+      <img src="images/amma.jpg" alt="The Queen">
+      <h2>The Queen👑</h2>
+    </a>
+
+    <!-- The Squad -->
+    <a href="squad.html" class="card">
+      <img src="images/squad.jpg" alt="The Squad">
+      <h2>The Squad🛡️</h2>
+    </a>
+  </div>
+</body>
+</html>

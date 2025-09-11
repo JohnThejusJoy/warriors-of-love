@@ -46,10 +46,14 @@
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
-    .card img {
-      width: 100%;
-      height: auto;
-    }
+   .card img {
+  width: 100%;
+  height: auto;         /* keep proportions */
+  object-fit: contain;  /* show entire image */
+  background: #fff;     /* fills space if empty bars appear */
+  padding: 10px;        /* optional: gives some breathing room */
+}
+
     .card h3 {
       padding: 15px;
       margin: 0;
@@ -85,3 +89,4 @@
   </div>
 </body>
 </html>
+

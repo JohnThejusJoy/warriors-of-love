@@ -31,27 +31,81 @@
         }
 
         .content {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 30px auto;
             padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
-        img {
-            display: block;
-            margin: 0 auto 20px;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        p {
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
             font-size: 1.1rem;
             color: #333;
-            margin-bottom: 20px;
+        }
+
+        .sphere-title {
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            color: #2c3e50;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #bdc3c7;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: black;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            width: 300px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: white;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #f1c40f;
+        }
+
+        /* Gold text for titles */
+        .card p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: #ecf0f1;
+            line-height: 1.5;
         }
 
         .back {
@@ -78,18 +132,96 @@
     </div>
 
     <div class="content">
-        <!-- Using download.jpg as a placeholder for angels if angels.jpg is missing -->
-        <img src="download.jpg" alt="Angels - The Heavenly Hosts">
+        <p class="intro">The <strong>Angels</strong> are not cute babies with wings. They are the <strong>Mighty
+                Warriors of Heaven</strong>. Organized into <strong>9 Choirs</strong>, they stand in the presence of
+            God, burning with love and power.</p>
 
-        <p>The <strong>Angels</strong> are not cute babies with wings. They are the <strong>Mighty Warriors of
-                Heaven</strong>. They stand in the presence of God, burning with love and power.</p>
+        <!-- First Sphere -->
+        <h2 class="sphere-title">The First Sphere – The Burning Ones🔥</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="angels_sphere1.png" alt="Seraphim">
+                <div class="card-content">
+                    <h3>Seraphim</h3>
+                    <p>The "Burning Ones." Closest to the Throne, they are consumed by infinite love. They chant "Holy,
+                        Holy, Holy" eternally.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="angels_sphere1.png" alt="Cherubim">
+                <div class="card-content">
+                    <h3>Cherubim</h3>
+                    <p>The "Fullness of Wisdom." Guardians of God's glory and the records of Heaven. They shine with
+                        divine knowledge.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="angels_sphere1.png" alt="Thrones">
+                <div class="card-content">
+                    <h3>Thrones</h3>
+                    <p>The "Seats of Justice." They represent God's steadfastness and peace. Through them, God's
+                        judgment is carried out.</p>
+                </div>
+            </div>
+        </div>
 
-        <p><strong>St. Michael</strong> leads the charge against darkness. <strong>St. Gabriel</strong> brings the news
-            that changes the world. <strong>St. Raphael</strong> brings healing. And your <strong>Guardian
-                Angel</strong>? A powerful protector assigned solely to <em>you</em>.</p>
+        <!-- Second Sphere -->
+        <h2 class="sphere-title">The Second Sphere – The Governors👑</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="angels_group.png" alt="Dominions">
+                <div class="card-content">
+                    <h3>Dominions</h3>
+                    <p>The "Commanders." They oversee the duties of lower angels and ensure the cosmos remains in order.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="angels_group.png" alt="Virtues">
+                <div class="card-content">
+                    <h3>Virtues</h3>
+                    <p>The "Miracles." They control the elements and nature. When a miracle happens, a Virtue is at
+                        work.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="angels_group.png" alt="Powers">
+                <div class="card-content">
+                    <h3>Powers</h3>
+                    <p>The "Warriors." The frontline against evil spirits. They protect our souls from darkness and
+                        temptation.</p>
+                </div>
+            </div>
+        </div>
 
-        <p>You are never fighting alone. The air around you is thick with their presence, fighting for your soul,
-            guiding your steps, and worshipping the King alongside you.</p>
+        <!-- Third Sphere -->
+        <h2 class="sphere-title">The Third Sphere – The Messengers🕊️</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="download.jpg" alt="Principalities">
+                <div class="card-content">
+                    <h3>Principalities</h3>
+                    <p>The "Rulers." They protect nations, cities, and groups of people. They guide the leaders of the
+                        world.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="download.jpg" alt="Archangels">
+                <div class="card-content">
+                    <h3>Archangels</h3>
+                    <p>The "Heralds." St. Michael, St. Gabriel, St. Raphael. They deliver God's most critical messages
+                        and fight big battles.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="download.jpg" alt="Angels">
+                <div class="card-content">
+                    <h3>Angels</h3>
+                    <p>The "Guardians." Closest to humanity. Your <strong>Guardian Angel</strong> is here, fighting for
+                        you every single second.</p>
+                </div>
+            </div>
+        </div>
 
         <a href="index.html" class="back">← Back to The Powerhouse⚡</a>
     </div>

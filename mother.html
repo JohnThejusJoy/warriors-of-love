@@ -31,27 +31,88 @@
         }
 
         .content {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 30px auto;
             padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
-        img {
-            display: block;
-            margin: 0 auto 20px;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        p {
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
             font-size: 1.1rem;
             color: #333;
-            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin: 50px 0 30px;
+            font-size: 2rem;
+            color: #2c3e50;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid #8e44ad;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: black;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            width: 300px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: white;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #f1c40f;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: #ecf0f1;
+            line-height: 1.5;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
         }
 
         .back {
@@ -74,21 +135,84 @@
 
 <body>
     <div class="header">
-        <h1>Our Mother – The Queen</h1>
+        <h1>Our Mother – The Queen 👑</h1>
     </div>
 
     <div class="content">
-        <img src="mother.jpg" alt="Mother Mary">
+        <img src="mother.jpg" alt="Mother Mary" class="hero-img">
+        <p class="intro"><strong>Mary</strong> is not just a statue. She is the <strong>Warrior Queen</strong> who
+            crushes the serpent's head. She is the <strong>Ark of the New Covenant</strong>, carrying the Fire of God.
+            When you are weak, run to her.</p>
 
-        <p><strong>Mary</strong> is the Masterpiece of God. She is the <strong>Ark of the New Covenant</strong>, the one
-            who carried the Fire of God within her. Her "Yes" changed history forever.</p>
+        <!-- Titles Section -->
+        <h2 class="section-title">Her Titles – The Identity</h2>
+        <div class="gallery">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Ark of the Covenant</h3>
+                    <p>In the Old Testament, the Ark carried God's law. Mary carried God Himself. She is the sacred
+                        vessel of the Most High.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Tower of Ivory</h3>
+                    <p>Pure, strong, and unbreakable. She stands as a fortress of purity in a world of chaos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Morning Star</h3>
+                    <p>The star that announces the rising Sun. She always points the way to Jesus, the Light of the
+                        World.</p>
+                </div>
+            </div>
+        </div>
 
-        <p>She isn't just a statue; she is a <strong>Warrior Queen</strong>. She crushes the serpent's head and leads
-            the army of angels. When you are weak, run to her. She is the <strong>Mother of the Church</strong> and
-            <em>your</em> Mother.</p>
+        <!-- Apparitions Section -->
+        <h2 class="section-title">Her Visits – The Apparitions</h2>
+        <div class="gallery">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Guadalupe</h3>
+                    <p><strong>The Empress.</strong> She appeared in Mexico and converted an entire empire with roses
+                        and her tilma. She is the protector of the unborn.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Lourdes</h3>
+                    <p><strong>The Healing.</strong> She appeared to St. Bernadette and revealed a spring of miraculous
+                        water that still heals thousands today.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Fatima</h3>
+                    <p><strong>The Warning.</strong> She appeared to three children with a message of prayer and
+                        penance, proving it with the Miracle of the Sun.</p>
+                </div>
+            </div>
+        </div>
 
-        <p>To love Jesus is to love the one He loved most. She will always, always lead you straight to her Son.
-            <strong>"Do whatever He tells you."</strong></p>
+        <!-- Devotions Section -->
+        <h2 class="section-title">Her Weapons – The Devotions</h2>
+        <div class="gallery">
+            <div class="card">
+                <div class="card-content">
+                    <h3>The Rosary</h3>
+                    <p><strong>The Sword.</strong> It's not just beads; it's a spiritual weapon. Padre Pio called it
+                        "The Weapon" against the darkness.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>The Scapular</h3>
+                    <p><strong>The Shield.</strong> A sign of her protection. Those who wear it with faith are wrapped
+                        in her mantle.</p>
+                </div>
+            </div>
+        </div>
 
         <a href="index.html" class="back">← Back to The Powerhouse⚡</a>
     </div>
